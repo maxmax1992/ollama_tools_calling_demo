@@ -3,6 +3,7 @@
 ## Description
 
 This assistant is intended to be used in a structured manner to create and update issues.json file. This is an example demo project how to implement a custom function calling.
+The assistant is designed to feed the error message into itself if it encounters an error in the workflow, this way it can handle the error gracefully and try to fix it.
 
 ## For this demo
 LLM agent populates issues.json file with issues that the user provides
