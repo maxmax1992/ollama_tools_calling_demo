@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "structured-assistant"
+version = "0.1.0"
+description = ""
+authors = ["Maxim Afteniy <maxim.afteniy@gmail.com>"]
+readme = "README.md"
+packages = [{include = "structured_assistant", from = "."}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ollama = "^0.4.7"
+langchain = "^0.3.19"
+rich = "^13.9.4"
+ipdb = "^0.13.13"
+openai = "^1.64.0"
+pytest = "^8.3.4"
+langchain-ollama = "^0.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
