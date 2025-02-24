@@ -60,7 +60,6 @@ def try_save_issue_or_return_error_string(model_response):
         except Exception as e:
             print(f"Error handling JSON file: {e}")
             error_string = "Error handling JSON file: {e}"
-            import ipdb; ipdb.set_trace()
             return False, error_string
     else:
         return False, "No issue match found"
@@ -71,7 +70,7 @@ if __name__ == "__main__":
     result = llm.invoke(messages)
     print(result.content)
     task_completed = False
-    while True:
+    while not task_completed:
         try:
             user_input = input("Enter your message (or 'quit' to exit): ")
             if user_input.lower() == 'quit':
