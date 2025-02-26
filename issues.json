@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "title": "Stuck in Vim",
+    "description": "When trying to exit Vim, nothing happens.",
+    "severity": 5
+  }
+]

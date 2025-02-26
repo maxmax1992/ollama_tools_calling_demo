@@ -79,9 +79,7 @@ if __name__ == "__main__":
             messages.append(HumanMessage(content=user_input))
             result = llm.invoke(messages)
             messages.append(AIMessage(content=result.content))
-            
-            print("result.content", result.content)
-
+            # print("result.content", result.content)
             if can_save_issue(result.content):
                 success = False
                 n_trials = 3
